@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ziva Vanessa Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#b09c49",
+                    "tertiary": "#6e5e0d",
+                    "on-primary-fixed": "#21005e",
+                    "on-error": "#ffffff",
+                    "background": "#f8f9ff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-fixed": "#002115",
+                    "secondary-fixed": "#a6f2cf",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#dee9fc",
+                    "inverse-primary": "#cebdff",
+                    "primary-container": "#a78bfa",
+                    "surface-variant": "#d9e3f6",
+                    "on-background": "#121c2a",
+                    "primary-fixed": "#e8ddff",
+                    "surface-bright": "#f8f9ff",
+                    "secondary-fixed-dim": "#8bd6b4",
+                    "secondary-container": "#a6f2cf",
+                    "tertiary-fixed-dim": "#dcc66e",
+                    "surface-container-low": "#eff4ff",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#494552",
+                    "surface-container-highest": "#d9e3f6",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#247155",
+                    "outline-variant": "#cac4d4",
+                    "on-primary-fixed-variant": "#4f319c",
+                    "tertiary-fixed": "#f9e287",
+                    "outline": "#7a7583",
+                    "on-surface": "#121c2a",
+                    "on-primary-container": "#3c1989",
+                    "on-error-container": "#93000a",
+                    "surface": "#f8f9ff",
+                    "inverse-surface": "#27313f",
+                    "surface-container": "#e6eeff",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed": "#221b00",
+                    "secondary": "#1b6b4f",
+                    "on-tertiary-fixed-variant": "#534600",
+                    "surface-tint": "#674bb5",
+                    "surface-dim": "#d0dbed",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#00513a",
+                    "primary": "#674bb5",
+                    "primary-fixed-dim": "#cebdff",
+                    "on-tertiary-container": "#3e3400"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "1rem",
+                    "gutter": "1.5rem",
+                    "stack-sm": "0.5rem",
+                    "stack-lg": "4rem",
+                    "stack-md": "1.5rem",
+                    "margin-desktop": "2.5rem",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "headline-xl": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Top Header (TopAppBar) -->
+<header class="bg-surface/40 dark:bg-background/40 backdrop-blur-xl docked full-width top-0 sticky shadow-sm shadow-primary/5 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="A professional yet youthful headshot of Ziva Vanessa, a teenage girl with a bright smile, wearing a modern school blazer. The background is a soft, out-of-focus pastel lavender garden. The lighting is warm and natural, following a luminous youth aesthetic with high-key exposure and soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaYJsbAyiFUc-IV8jYXbkGCYgsP0zrLyJ5Gm0QCchpSs6-OhUTclKcvS5gir4e5lfQnst2b1eN7lRwBZInXDHFZ1EwI2aUjui4AD6ATO3X5hI3toG7_jvPAE_-jtNKzoa3utAYEchOt_IccqOaojWLMvQaoGQfdW9aHds2Ls7n7lFdahpZGjRSI5Y_zdJ4M5F07mvyerw2vCTIEvKDu4YZMvyNGDnUgsmLOnbZQY_P5YLMKSlc6vpapEVdEzd1JqJzv5AqWs-1n_0"/>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">Ziva Vanessa</h1>
+</div>
+<button class="text-primary dark:text-primary-fixed-dim">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative px-margin-mobile pt-10 pb-20 overflow-hidden" id="hero">
+<div class="flex flex-col items-center text-center gap-6 relative z-10">
+<div class="w-48 h-48 rounded-[2rem] overflow-hidden shadow-lg rotate-3 mb-4">
+<img class="w-full h-full object-cover -rotate-3 scale-110" data-alt="Close up portrait of a bright teenage entrepreneur, Ziva Vanessa, holding a tablet and a sketchbook. She is in a minimalist, modern room with large windows and soft sunlight. The style is clean-minimalist with a primary color palette of lavender and mint accents. Soft depth of field creates a premium feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQQRxd9cjlet546MnSEdSNX1L6hYWU7oaHq2fL1K9vx48U2sdosuKIOQi2xyEEIcUQiHnWquV2ArSTZOuAZBYzSrtOmH1R-uHHJzAhrUQK8GudyoUTPZlu1MACB-2FYr0GmXjdn-VpDcvnAOrn_7fPiCgW3yqErkvHIZVX8tfbU4IXL-K2PMxojPbkzvalLI3QDWAkpAY9HIfpFKGfsjooGki0ym7qkSfMtRVjnDxgi5-gTOIbNWMd6qadYwxJLgT7VxYuMUCzSAU"/>
+</div>
+<div>
+<span class="bg-primary-container/20 text-on-primary-container px-4 py-1 rounded-full font-label-md text-label-md mb-4 inline-block">Halo! Saya Ziva</span>
+<h2 class="font-headline-xl text-headline-xl text-on-background tracking-tight">Pelajar SMA | Pengusaha Muda | Belajar Web Development</h2>
+</div>
+<div class="flex flex-col w-full gap-3 mt-4">
+<a class="bg-primary text-on-primary py-4 px-8 rounded-xl font-label-md text-label-md shadow-md hover:translate-y-[-2px] transition-all active:scale-95 text-center" href="#proyek">Lihat Portofolio</a>
+<a class="border-2 border-secondary text-secondary py-4 px-8 rounded-xl font-label-md text-label-md hover:bg-secondary/5 transition-all active:scale-95 text-center" href="#kontak">Hubungi Saya</a>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl"></div>
+</section>
+<!-- About Me Section -->
+<section class="bg-surface-container-low py-20 px-margin-mobile" id="tentang">
+<div class="max-w-container-max mx-auto">
+<div class="flex items-center gap-2 mb-6">
+<span class="w-12 h-1 bg-primary rounded-full"></span>
+<h3 class="font-headline-md text-headline-md text-primary">Tentang Saya</h3>
+</div>
+<div class="glass-card p-8 rounded-[2rem] border border-white/50 shadow-sm">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Saya adalah seorang siswa SMA yang memiliki semangat tinggi dalam dunia wirausaha dan teknologi. Bagi saya, usia bukanlah batasan untuk mulai berkarya. 
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mt-4">
+                        Saat ini, saya sedang mengembangkan bisnis <span class="text-secondary font-bold">Ziva's Creations</span> sambil mendalami keterampilan baru di bidang <span class="text-primary font-bold">Web Development</span> untuk membangun masa depan digital yang lebih cerah.
+                    </p>
+</div>
+</div>
+</section>
+<!-- My Business Section (Usaha Saya) -->
+<section class="py-20 px-margin-mobile" id="bisnis">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col mb-10">
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Usaha Saya</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Karya kreatif dari hati untuk dunia.</p>
+</div>
+<!-- Product Gallery Card -->
+<div class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col">
+<div class="h-64 relative">
+<img class="w-full h-full object-cover" data-alt="A beautiful gallery display of handmade artisan products from Ziva's Creations. The collection includes aesthetic beaded jewelry, custom stationery, and hand-painted small accessories. The setting is clean with soft pastel backgrounds, mint green and lavender accents, and high-quality studio lighting that emphasizes the tactile details of the products." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP_VsFyyuHIgsA4VXRoSfoI9rKTBgAY4kG4Mw9s8VlhpH20E8vay94it-jJeFbT_inKQkaDyvIjECbv4cYxAPLva8BlhwPE_d6Fs6_CcIorGglLHCdLzyk-BnklcQ9_ukEz90H6Uqfb4DrMZua8HH4tOjuo28rbdz0N_3mSHGQDvHA8664R_DvuTRYgMcLt4vRCTOxGu2f0RnEEasXmA8gm-HVlQpC_kWbbd_DtLJ2J87mvGsPRYxCvvlQSRyVemHvejZhuBRFG54"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-label-sm font-label-sm text-secondary">Terbaru</div>
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="bg-secondary-container/20 text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm">Handmade</span>
+<span class="bg-tertiary-container/20 text-on-tertiary-container px-3 py-1 rounded-full text-label-sm font-label-sm">Unique</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-background mb-2">Ziva's Creations</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Produk kerajinan tangan yang unik dan personal, dirancang khusus untuk membawa keceriaan dalam keseharian Anda.</p>
+<a class="flex items-center justify-center gap-2 bg-secondary text-on-secondary py-4 rounded-xl font-label-md text-label-md w-full transition-transform active:scale-95 shadow-lg shadow-secondary/10" href="https://wa.me/#">
+<span class="material-symbols-outlined">shopping_cart</span>
+                            Pesan Sekarang
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Coding Showcase Section (Hasil Belajar) -->
+<section class="bg-surface-container py-20 px-margin-mobile" id="proyek">
+<div class="max-w-container-max mx-auto overflow-hidden">
+<div class="flex justify-between items-end mb-10">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Hasil Belajar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Perjalanan saya mempelajari HTML & CSS.</p>
+</div>
+</div>
+<!-- Horizontal Slider -->
+<div class="flex overflow-x-auto gap-6 pb-8 hide-scrollbar snap-x snap-mandatory" id="learning-slider">
+<!-- Slide 1 -->
+<div class="min-w-[85%] snap-center glass-card border border-white/60 rounded-[2.5rem] p-6 flex flex-col gap-4 shadow-xl shadow-primary/5">
+<div class="aspect-video rounded-2xl overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist screenshot of a basic HTML code structure in a modern dark-themed code editor like VS Code. The code is highlighted with vibrant purple and green syntax colors. Beside the editor, a simple browser window shows a 'Hello World' page with structured headings and lists. The aesthetic is professional, technical, yet accessible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVel2vj5cOc3A3kXTHx73lxTYgvYeCmpiphPXOB6mz5_IS9Am-Zd7IWqKH_pzWVtyXz5B0yha3Yi2JP_rw59th939qrkSq7n91lVqgJJV48zlHji-376RByayIMft4uALhmKqtMgSQUAe5xDsZtwK6hdygb3SjyBBsKg5R-_s4cQ0BG-qQHNFf5gKPxJrktJCnPHXzBimg8onXspRa8ONC8tX3rrinI5dtg0hKMcKgPYwLAScrsVGjlL_DM8wIJEkiH9iTyt82AiM"/>
+</div>
+<div>
+<span class="text-primary font-label-md text-label-md font-bold block mb-1">Minggu 1: Struktur HTML</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Belajar dasar tag HTML untuk membangun kerangka website yang solid dan aksesibel.</p>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="min-w-[85%] snap-center glass-card border border-white/60 rounded-[2.5rem] p-6 flex flex-col gap-4 shadow-xl shadow-primary/5">
+<div class="aspect-video rounded-2xl overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="A side-by-side comparison showing a raw HTML page on the left and a beautifully styled version on the right using CSS. The styled version features soft lavender backgrounds, rounded buttons, and elegant Montserrat typography. Code snippets showing flexbox properties and border-radius are visible in a floating glassmorphic window." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsTYsYFl2B0YWuIB3pkLrrYDnPu9OjAtbEkJggjWud-XcmREoNwIGPw3JoEnM93q-MjcKv3ToBLapv_2O9u0rsFKXCVBuiMZk8082omeNFtjP9uf0FlE6GOBEgHcL95zpVCf4VwXhFS5fV2beAtqHLGFbwNd-JaA-qFywddZM79snzrx_QulryboyTuq1vxx4hBWacPLeA3FdCklr9JrgQbRrlyrTrXCw7IMBirtvIP1FeCLXV6RvZJx3XGkFfp37Pgig6wIBk7L4"/>
+</div>
+<div>
+<span class="text-primary font-label-md text-label-md font-bold block mb-1">Minggu 2: CSS Styling</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Belajar layout menggunakan Flexbox dan memberikan sentuhan warna serta estetika pada UI.</p>
+</div>
+</div>
+</div>
+<!-- Dot Indicators -->
+<div class="flex justify-center gap-2 mt-2">
+<div class="w-8 h-2 bg-secondary rounded-full"></div>
+<div class="w-2 h-2 bg-outline-variant rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-20 px-margin-mobile">
+<div class="max-w-container-max mx-auto text-center">
+<h3 class="font-label-md text-label-md text-outline uppercase tracking-widest mb-6">Skills & Tools</h3>
+<div class="flex flex-wrap justify-center gap-3">
+<div class="bg-primary-container/10 border border-primary-container/30 text-on-primary-container px-6 py-3 rounded-full flex items-center gap-2 font-label-md text-label-md">
+<span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+                        HTML
+                    </div>
+<div class="bg-secondary-container/10 border border-secondary-container/30 text-on-secondary-container px-6 py-3 rounded-full flex items-center gap-2 font-label-md text-label-md">
+<span class="w-2 h-2 bg-secondary rounded-full animate-pulse"></span>
+                        CSS
+                    </div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="bg-surface-container-highest py-20 px-margin-mobile rounded-t-[3rem]" id="kontak">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-10">
+<h3 class="font-headline-md text-headline-md text-on-background mb-2">Mari Terhubung</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Punya ide bisnis atau sekadar ingin menyapa?</p>
+</div>
+<div class="grid gap-4 mb-10">
+<a class="bg-white p-5 rounded-2xl flex items-center gap-4 shadow-sm active:scale-95 transition-all" href="#">
+<div class="w-12 h-12 bg-secondary-container/20 rounded-xl flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-background">WhatsApp</p>
+<p class="text-label-sm text-on-surface-variant">Tanya langsung ke saya</p>
+</div>
+</a>
+<a class="bg-white p-5 rounded-2xl flex items-center gap-4 shadow-sm active:scale-95 transition-all" href="#">
+<div class="w-12 h-12 bg-primary-container/20 rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">photo_camera</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-background">Instagram</p>
+<p class="text-label-sm text-on-surface-variant">Ikuti keseharian saya</p>
+</div>
+</a>
+<a class="bg-white p-5 rounded-2xl flex items-center gap-4 shadow-sm active:scale-95 transition-all" href="#">
+<div class="w-12 h-12 bg-tertiary-container/20 rounded-xl flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-background">Email</p>
+<p class="text-label-sm text-on-surface-variant">Kirim pesan formal</p>
+</div>
+</a>
+</div>
+<form class="flex flex-col gap-4 bg-white p-6 rounded-[2rem] shadow-lg">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant ml-2 mb-1 block">Nama</label>
+<input class="w-full bg-surface px-4 py-3 rounded-xl border-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Nama Anda" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant ml-2 mb-1 block">Email</label>
+<input class="w-full bg-surface px-4 py-3 rounded-xl border-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="email@contoh.com" type="email"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant ml-2 mb-1 block">Pesan</label>
+<textarea class="w-full bg-surface px-4 py-3 rounded-xl border-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Apa yang ingin Anda bicarakan?" rows="4"></textarea>
+</div>
+<button class="bg-primary text-on-primary py-4 rounded-xl font-label-md text-label-md mt-2 shadow-md active:opacity-80 transition-opacity" type="submit">Kirim Pesan</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-4 max-w-container-max mx-auto pb-24 md:pb-8">
+<div class="flex flex-col items-center md:items-start gap-1">
+<span class="font-headline-md text-headline-md font-bold text-primary">Ziva Vanessa</span>
+<p class="text-on-surface-variant font-body-md text-body-md">© 2024 Ziva Vanessa. All rights reserved.</p>
+</div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">WhatsApp</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Email</a>
+</div>
+</footer>
+<!-- Bottom Navigation Bar (BottomNavBar) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface/40 dark:bg-background/40 backdrop-blur-xl shadow-lg shadow-primary/10 rounded-t-xl flex justify-around items-center px-2 py-3 md:hidden">
+<a class="flex flex-col items-center justify-center bg-primary-container/20 dark:bg-primary-container text-on-primary-container rounded-full px-4 py-1 flex flex-col items-center justify-center" href="#hero">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm">Hero</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:bg-primary-container/10 transition-all" href="#tentang">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm text-label-sm">Tentang</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:bg-primary-container/10 transition-all" href="#bisnis">
+<span class="material-symbols-outlined">business_center</span>
+<span class="font-label-sm text-label-sm">Bisnis</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:bg-primary-container/10 transition-all" href="#proyek">
+<span class="material-symbols-outlined">code</span>
+<span class="font-label-sm text-label-sm">Proyek</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:bg-primary-container/10 transition-all" href="#kontak">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label-sm text-label-sm">Kontak</span>
+</a>
+</nav>
+<script>
+        // Simple micro-interaction for the slider dots
+        const slider = document.getElementById('learning-slider');
+        const dots = document.querySelectorAll('.justify-center.gap-2.mt-2 div');
+
+        slider.addEventListener('scroll', () => {
+            const index = Math.round(slider.scrollLeft / (slider.offsetWidth * 0.85));
+            dots.forEach((dot, i) => {
+                if(i === index) {
+                    dot.className = 'w-8 h-2 bg-secondary rounded-full transition-all duration-300';
+                } else {
+                    dot.className = 'w-2 h-2 bg-outline-variant rounded-full transition-all duration-300';
+                }
+            });
+        });
+
+        // Active State Logic for Bottom Nav
+        const navItems = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.className = 'flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:bg-primary-container/10 transition-all';
+                if (item.getAttribute('href').substring(1) === current) {
+                    item.className = 'flex flex-col items-center justify-center bg-primary-container/20 dark:bg-primary-container text-on-primary-container rounded-full px-4 py-1';
+                }
+            });
+        });
+    </script>
+</body></html>
